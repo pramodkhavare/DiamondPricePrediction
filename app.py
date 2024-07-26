@@ -8,7 +8,7 @@ app = application
 @app.route('/')
 def hello_world():
     # return 'Hello, World!'
-    return render_template('index.html')
+    return render_template('index.html')  
 
 
 @app.route('/predict',methods=['GET','POST'])
