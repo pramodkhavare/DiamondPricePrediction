@@ -125,6 +125,7 @@
             flex: 2;
         }
 
+        
 
         
     </style>
@@ -133,8 +134,7 @@
 </head>
 <body>
     <body>
-        <h1>Diamond Price<br> Prediction</h1> 
-
+            <h1>Diamond Price<br> Prediction</h1> 
         <div style="display: flex;">
                 <form action="/predict" method="POST" class="container">
         <div class="form-group">
@@ -209,10 +209,10 @@
         <input type="submit" value="Submit">
     </form>
     
-    <div id="result-container">
+    <div class="result-container" id="result-container">
         {% if final_result %}
             <h2>◆◆◆◆◆◆◆◆◆◆◆◆<br>
-                Result: {{ final_result }}<br>
+                Result : {{ final_result }}<br>
                 ◆◆◆◆◆◆◆◆◆◆◆◆
             </h2>
         {% endif %}
