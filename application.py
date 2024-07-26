@@ -2,7 +2,7 @@ from flask import Flask,request,render_template,jsonify
 from src.pipeline.prediction_pipeline  import CustomData,PredictPipeline
 
 
-application=Flask(__name__)  #This will help to tell start point to elastic beanstalk 
+application = Flask(__name__)  #This will help to tell start point to elastic beanstalk 
 app = application
 
 @app.route('/')
@@ -42,4 +42,4 @@ def predict_datapoint():
 
 
 if __name__=="__main__":
-    app.run(debug=True,port=8501)
+    app.run(host="0.0.0.0" )
